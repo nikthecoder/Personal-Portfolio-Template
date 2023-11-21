@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navbar */
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the welcome section */
+#welcome-section {
+    background-image: url('https://images4.alphacoders.com/130/thumb-1920-1307940.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    font-size: 2rem;
+}
+
+/* Style the projects section */
+#projects {
+    padding: 40px;
+}
+
+.project-tile {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-tile h2 {
+    font-size: 1.5rem;
+}
+
+.project-tile a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+    #navbar a {
+        margin: 10px 0;
+    }
+}
